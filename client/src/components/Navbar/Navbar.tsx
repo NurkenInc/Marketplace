@@ -4,20 +4,26 @@ import {
   Box,
   Button,
 } from '@chakra-ui/react'
-import { useAuth0 } from '@auth0/auth0-react'
+import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-  const { loginWithRedirect } = useAuth0()
-
+  const navigate = useNavigate()
+  
   return (
     <Container maxW='container.xl'>
       <Box>
-        <Button 
-          colorScheme='purple'
-          onClick={() => loginWithRedirect()}
-        >
-          Log In
-        </Button>
+        <SignedOut>
+          <Button
+            colorScheme='purple'
+            onClick={() => navigate('/sign-in')}
+          >
+            Log In
+          </Button>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </Box>
     </Container>
   )
