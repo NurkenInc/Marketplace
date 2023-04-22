@@ -4,9 +4,7 @@ import { Navbar } from '../components'
 
 const Home = () => {
   return (
-    <Container maxW='container.xl'>
-      <Navbar />
-    </Container>
+    <Navbar />
   )
 }
 
