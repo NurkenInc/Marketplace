@@ -4,6 +4,7 @@ import {
   SignIn,
   SignUp
 } from '@clerk/clerk-react'
+import { dark } from '@clerk/themes'
 import { 
   BrowserRouter as Router,
   Routes,
