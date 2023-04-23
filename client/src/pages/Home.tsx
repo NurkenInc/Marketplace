@@ -1,10 +1,14 @@
-import { Container } from '@chakra-ui/react'
-
-import { Navbar } from '../components'
+import { 
+  Navbar,
+  ItemsList,
+} from '../components'
 
 const Home = () => {
   return (
-    <Navbar />
+    <>
+      <Navbar />
+      <ItemsList />
+    </>
   )
 }
 
