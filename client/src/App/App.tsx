@@ -12,7 +12,7 @@ import {
   useNavigate,
 } from 'react-router-dom'
 
-import { Home } from '../pages'
+import { Home, Profile, Details } from '../pages'
 
 import './App.css'
 
@@ -28,12 +28,14 @@ const ClerkProviderWithRoutes = () => {
     >
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/item/details/:id' element={<Details />} />
+        <Route path='/profile' element={<Profile />} />
         <Route 
           path='/sign-in/*'
           element={
             <SignIn 
-              routing='path' 
-              path='/sign-in' 
+              routing='path'
+              path='/sign-in'
               redirectUrl='/'
               signUpUrl='/sign-up'
             />
