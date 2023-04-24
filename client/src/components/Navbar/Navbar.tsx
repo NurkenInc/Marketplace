@@ -7,9 +7,9 @@ import { Logotype, ToggleModeButton } from '../../components'
 const Navbar = () => {
   const navigate = useNavigate()
   const { user } = useUser()
-  console.log(user)
 
   const handleLogin = () => navigate('/sign-in')
+  const handleProfile = () => navigate('/profile')
 
   return (
     <div className='navbar bg-purple-400 rounded-[20px] justify-between items-center max-w-full transition-colors duration-500'>
@@ -17,7 +17,10 @@ const Navbar = () => {
       <div className='flex gap-4'>
         <ToggleModeButton />
         <SignedIn>
-          <button className='px-0 py-0 border-none rounded-[50%] overflow-hidden'>
+          <button
+            className='px-0 py-0 border-none rounded-[50%] overflow-hidden hover:opacity-50'
+            onClick={handleProfile}
+          >
             <img 
               className='w-[40px]'
               src={user?.profileImageUrl} 
