@@ -1,6 +1,7 @@
 import { 
   Navbar,
   ItemsList,
+  Transactions
 } from '../components'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <Navbar />
       <ItemsList />
+      <Transactions />
     </>
   )
 }
