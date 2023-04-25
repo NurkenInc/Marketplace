@@ -13,6 +13,7 @@ import {
 } from 'react-router-dom'
 
 import { Home, Profile, Details } from '../pages'
+import { Navbar } from '../components'
 
 import './App.css'
 
@@ -26,6 +27,7 @@ const ClerkProviderWithRoutes = () => {
       publishableKey={clerkPubKey}
       navigate={(to) => navigate(to)}
     >
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/item/details/:id' element={<Details />} />
