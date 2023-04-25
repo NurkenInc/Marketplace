@@ -7,7 +7,6 @@ import {
 const Home = () => {
   return (
     <>
-      <Navbar />
       <ItemsList />
       <Transactions />
     </>
