@@ -87,15 +87,17 @@ const ItemsList = () => {
       <div className='overflow-x-auto w-full py-5 overflow-y-scroll h-[260px]'>
         <table className='custom-table w-full'>
           <thead className='bg-gray-200 font-mono text-left'>
-            <th className='py-4 px-8'>User</th>
-            <th>Item Name</th>
-            <th>Item Price</th>
-            <th></th>
+            <tr>
+              <th className='py-4 px-8'>User</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th></th>
+            </tr>
           </thead>
           <tbody>
             {
               testData.map((item, index) => (
-                <tr className='bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-colors duration-500'>
+                <tr key={item + index.toString()} className='bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-colors duration-500'>
                   <td className='flex items-center gap-2 py-4 px-8'>
                     <img
                       className='w-[35px] rounded-[30px] bg-purple-400'
