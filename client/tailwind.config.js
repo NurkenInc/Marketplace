@@ -16,9 +16,26 @@ export default {
       {
         dark: {
           ...require('daisyui/src/colors/themes')['[data-theme=light]'],
+          '#root': {
+            'background-color': '#2b3447',
+            'transition': 'all 400ms'
+          },
           '.navbar': {
             'background-color': '#1e293b',
             'color': '#c084fc'
+          },
+          'thead': {
+            'background-color': '#082f49',
+            'color': '#c084fc'
+          },
+          '.profile': {
+            'color': '#c084fc'  
+          },
+          '.items-hero': {
+            'color': '#a78bfa'
+          },
+          '.inventory-items': {
+            'background-color': '#082f49'
           },
           '.custom-table': {
             'tbody': {
