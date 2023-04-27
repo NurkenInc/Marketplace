@@ -3,6 +3,9 @@ import Logotype from './Logotype/Logotype'
 import ToggleModeButton from './ToggleModeButton/ToggleModeButton'
 import ItemsList from './MarketplaceItems/ItemsList/ItemsList'
 import Transactions from './Transactions/Transactions'
+import Statistics from './Statistics/Statistics'
+import TransactionsHistory from './TransactionsHistory/TransactionsHistory'
+import Inventory from './Inventory/Inventory'
 
 export {
   Navbar,
@@ -10,4 +13,7 @@ export {
   ToggleModeButton,
   ItemsList,
   Transactions,
+  Statistics,
+  TransactionsHistory,
+  Inventory,
 }
