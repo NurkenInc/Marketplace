@@ -12,7 +12,7 @@ const Navbar = () => {
   const handleProfile = () => navigate('/profile')
 
   return (
-    <div className='navbar bg-purple-400 rounded-[20px] justify-between items-center max-w-full transition-colors duration-500'>
+    <div className='navbar bg-purple-400 rounded-[20px] justify-between items-center max-w-full transition-colors duration-400'>
       <Logotype />
       <div className='flex gap-4'>
         <ToggleModeButton />
