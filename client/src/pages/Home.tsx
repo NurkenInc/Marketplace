@@ -6,10 +6,10 @@ import {
 
 const Home = () => {
   return (
-    <>
+    <div className='h-[100vh]'>
       <ItemsList />
       <Transactions />
-    </>
+    </div>
   )
 }
 
