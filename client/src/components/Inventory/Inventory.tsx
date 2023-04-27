@@ -21,3 +21,5 @@ const Inventory = () => {
 }
 
 export default Inventory
+
+// make full cards like post cards but with overflow to make item ui better
