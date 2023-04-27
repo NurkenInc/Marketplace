@@ -83,7 +83,7 @@ const ItemsList = () => {
 
   return (
     <div>
-      <h1 className='py-2 font-bold'>Current offers</h1>
+      <h1 className='py-2 px-4 font-bold items-hero'>Current offers</h1>
       <div className='overflow-x-auto w-full py-5 overflow-y-scroll h-[260px]'>
         <table className='custom-table w-full'>
           <thead className='bg-gray-200 font-mono text-left'>
